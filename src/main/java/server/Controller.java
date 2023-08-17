@@ -1,51 +1,68 @@
 package server;
 
+import java.util.Arrays;
+
 public class Controller {
     DictionaryOperationsImpl operations = new DictionaryOperationsImpl();
 
     //TODO: function to parse the string to the right format
     private String[] handleInput(String input) {
-        return input.split("#");
+        String[] inputSplit = new String[3];
+        String[] split = input.split("#");
+        int i=0;
+        for (String str: split) {
+            inputSplit[i] = str;
+            i+=1;
+        }
+//        Arrays.fill(inputSplit, "null");
 
+        return inputSplit;
     }
 
 
-    public void getCommand(String input) {   // this function get the string from the server,
+    public String getCommand(String input) {   // this function get the string from the server,
         String[] inputSplit = handleInput(input);
+        String response;
         String command = inputSplit[0];
         String word = inputSplit[1];
         String meaning = inputSplit[2];
+        for (String str: inputSplit) {
+            System.out.println(str);
+        }
         switch (command) {
             case "read":
-                readWord(word);
+                response = readWord(word);
                 break;
             case "add":
-                addWord(word, meaning);
+                response = addWord(word, meaning);
                 break;
             case "update":
-                updateWord(word, meaning);
+                response = updateWord(word, meaning);
                 break;
             case "delete":
-                deleteWord(word);
+                response = deleteWord(word);
                 break;
             default:
                 System.out.println("wrong command");
+                response = "wrong command";
         }
+        return response;
     }
 
-    private void readWord(String targetWord) {
-        operations.readWord(targetWord);
+    private String readWord(String targetWord) {
+
+        return operations.readWord(targetWord);
     }
 
-    private void deleteWord(String targetWord) {
-        operations.deleteWord(targetWord);
+    private String deleteWord(String targetWord) {
+        return operations.deleteWord(targetWord);
     }
 
-    private void updateWord(String targetWord, String newMeaning) {
-        operations.updateWord(targetWord, newMeaning);
+    private String updateWord(String targetWord, String newMeaning) {
+        return operations.updateWord(targetWord, newMeaning);
     }
 
-    private void addWord(String newWord, String meaning) {
-        operations.addWord(newWord, meaning);
+    private String addWord(String newWord, String meaning) {
+       return operations.addWord(newWord, meaning);
     }
 }

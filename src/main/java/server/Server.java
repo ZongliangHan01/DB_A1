@@ -49,11 +49,13 @@ public class Server {
                 {
                     while((clientMsg = in.readLine()) != null)
                     {
+                        String response = controller.getCommand(clientMsg);
                         System.out.println("Message from client " + i + ": " + clientMsg);
-                        out.write("server.Server Ack " + clientMsg + "\n");
+//                        out.write("server.Server Ack " + clientMsg + "\n" + response + "\n");
+                        out.write(response+"\n");
                         out.flush();
 
-                         controller.getCommand(clientMsg);
+//                         controller.getCommand(clientMsg);
                         // need to have a way to parse the data to the correct format
                         System.out.println("Response sent");
                     }

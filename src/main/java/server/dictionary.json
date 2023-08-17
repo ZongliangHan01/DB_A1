@@ -17,9 +17,6 @@
   "word" : "mountain",
   "meaning" : "a large natural elevation of the earth's surface"
 }, {
-  "word" : "book",
-  "meaning" : "a written or printed work consisting of pages glued or sewn together"
-}, {
   "word" : "car",
   "meaning" : "a road vehicle, typically with four wheels, powered by an internal combustion engine"
 }, {
@@ -28,9 +25,6 @@
 }, {
   "word" : "water",
   "meaning" : "a colorless, transparent, odorless liquid that forms the seas, lakes, rivers, and rain"
-}, {
-  "word" : "sky",
-  "meaning" : "the region of the atmosphere and outer space seen from the earth"
 }, {
   "word" : "flower",
   "meaning" : "the reproductive structure found in flowering plants"
@@ -61,4 +55,7 @@
 }, {
   "word" : "phone",
   "meaning" : "a communication device"
+}, {
+  "word" : "sky",
+  "meaning" : "the region of the atmosphere and outer space seen from the earth"
 } ]
