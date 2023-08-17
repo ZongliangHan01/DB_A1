@@ -1,101 +1,64 @@
-[
-  {
-    "word": "hello",
-    "meaning": "a way of greeting"
-  },
-
-  {
-    "word": "world",
-    "meaning": "the earth and all people and things on it"
-  },
-
-  {
-    "word": "apple",
-    "meaning": "a fruit with a red or green skin and firm white flesh"
-  },
-
-  {
-    "word": "computer",
-    "meaning": "an electronic device for storing and processing data"
-  },
-
-  {
-    "word": "sun",
-    "meaning": "the star that provides light and heat for the earth"
-  },
-
-  {
-    "word": "moon",
-    "meaning": "the natural satellite of the earth"
-  },
-
-  {
-    "word": "ocean",
-    "meaning": "a large body of saltwater that covers most of the earth's surface"
-  },
-
-  {
-    "word": "mountain",
-    "meaning": "a large natural elevation of the earth's surface"
-  },
-
-  {
-    "word": "book",
-    "meaning": "a written or printed work consisting of pages glued or sewn together"
-  },
-
-  {
-    "word": "car",
-    "meaning": "a road vehicle, typically with four wheels, powered by an internal combustion engine"
-  },
-
-  {
-    "word": "tree",
-    "meaning": "a woody perennial plant with a single main stem or trunk"
-  },
-
-  {
-    "word": "water",
-    "meaning": "a colorless, transparent, odorless liquid that forms the seas, lakes, rivers, and rain"
-  },
-
-  {
-    "word": "sky",
-    "meaning": "the region of the atmosphere and outer space seen from the earth"
-  },
-
-  {
-    "word": "flower",
-    "meaning": "the reproductive structure found in flowering plants"
-  },
-
-  {
-    "word": "bird",
-    "meaning": "a warm-blooded vertebrate with feathers and beaks"
-  },
-
-  {
-    "word": "dog",
-    "meaning": "a domesticated mammal known for its loyalty and companionship"
-  },
-
-  {
-    "word": "cat",
-    "meaning": "a small carnivorous mammal kept as a pet or for catching rats"
-  },
-
-  {
-    "word": "house",
-    "meaning": "a building for human habitation"
-  },
-
-  {
-    "word": "food",
-    "meaning": "any nutritious substance that people or animals eat or drink"
-  },
-
-  {
-    "word": "music",
-    "meaning": "vocal or instrumental sounds combined in such a way as to produce beauty of form, harmony, and expression"
-  }
-]
+[ {
+  "word" : "world",
+  "meaning" : "the earth and all people and things on it"
+}, {
+  "word" : "apple",
+  "meaning" : "a fruit with a red or green skin and firm white flesh"
+}, {
+  "word" : "computer",
+  "meaning" : "an electronic device for storing and processing data"
+}, {
+  "word" : "sun",
+  "meaning" : "the star that provides light and heat for the earth"
+}, {
+  "word" : "moon",
+  "meaning" : "the natural satellite of the earth"
+}, {
+  "word" : "mountain",
+  "meaning" : "a large natural elevation of the earth's surface"
+}, {
+  "word" : "book",
+  "meaning" : "a written or printed work consisting of pages glued or sewn together"
+}, {
+  "word" : "car",
+  "meaning" : "a road vehicle, typically with four wheels, powered by an internal combustion engine"
+}, {
+  "word" : "tree",
+  "meaning" : "a woody perennial plant with a single main stem or trunk"
+}, {
+  "word" : "water",
+  "meaning" : "a colorless, transparent, odorless liquid that forms the seas, lakes, rivers, and rain"
+}, {
+  "word" : "sky",
+  "meaning" : "the region of the atmosphere and outer space seen from the earth"
+}, {
+  "word" : "flower",
+  "meaning" : "the reproductive structure found in flowering plants"
+}, {
+  "word" : "bird",
+  "meaning" : "a warm-blooded vertebrate with feathers and beaks"
+}, {
+  "word" : "dog",
+  "meaning" : "a domesticated mammal known for its loyalty and companionship"
+}, {
+  "word" : "cat",
+  "meaning" : "a small carnivorous mammal kept as a pet or for catching rats"
+}, {
+  "word" : "house",
+  "meaning" : "a building for human habitation"
+}, {
+  "word" : "food",
+  "meaning" : "any nutritious substance that people or animals eat or drink"
+}, {
+  "word" : "music",
+  "meaning" : "vocal or instrumental sounds combined in such a way as to produce beauty of form, harmony, and expression"
+}, {
+  "word" : "pen",
+  "meaning" : "penpenpen"
+}, {
+  "word" : "hello",
+  "meaning" : "hihihi"
+}, {
+  "word" : "phone",
+  "meaning" : "a communication device"
+} ]

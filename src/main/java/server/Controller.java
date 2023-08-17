@@ -5,26 +5,29 @@ public class Controller {
 
     //TODO: function to parse the string to the right format
     private String[] handleInput(String input) {
-        return input.split(" ");
+        return input.split("#");
 
     }
 
 
     public void getCommand(String input) {   // this function get the string from the server,
         String[] inputSplit = handleInput(input);
-        int command = Integer.parseInt(inputSplit[0]);
+        String command = inputSplit[0];
         String word = inputSplit[1];
+        String meaning = inputSplit[2];
         switch (command) {
-            case 1:
+            case "read":
                 readWord(word);
                 break;
-            case 2:
-                addWord();
+            case "add":
+                addWord(word, meaning);
                 break;
-            case 3:
-                updateWord();
-            case 4:
-                deleteWord();
+            case "update":
+                updateWord(word, meaning);
+                break;
+            case "delete":
+                deleteWord(word);
+                break;
             default:
                 System.out.println("wrong command");
         }
@@ -34,15 +37,15 @@ public class Controller {
         operations.readWord(targetWord);
     }
 
-    private void deleteWord() {
-        operations.deleteWord();
+    private void deleteWord(String targetWord) {
+        operations.deleteWord(targetWord);
     }
 
-    private void updateWord() {
-        operations.updateWord();
+    private void updateWord(String targetWord, String newMeaning) {
+        operations.updateWord(targetWord, newMeaning);
     }
 
-    private void addWord() {
-        operations.addWord();
+    private void addWord(String newWord, String meaning) {
+        operations.addWord(newWord, meaning);
     }
 }
