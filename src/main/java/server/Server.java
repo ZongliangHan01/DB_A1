@@ -1,3 +1,5 @@
+package server;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -11,6 +13,8 @@ public class Server {
 
         ServerSocket listeningSocket = null;
         Socket clientSocket = null;
+        Controller controller = new Controller();
+
 
         try {
             //Create a server socket listening on port 4444
@@ -21,11 +25,11 @@ public class Server {
             //Listen for incoming connections for ever
             while (true)
             {
-                System.out.println("Server listening on port 4444 for a connection");
+                System.out.println("server.Server listening on port 4444 for a connection");
                 //Accept an incoming client connection request
                 clientSocket = listeningSocket.accept(); //This method will block until a connection request is received
                 i++;
-                System.out.println("Client conection number " + i + " accepted:");
+                System.out.println("client.Client conection number " + i + " accepted:");
                 //System.out.println("Remote Port: " + clientSocket.getPort());
                 System.out.println("Remote Hostname: " + clientSocket.getInetAddress().getHostName());
                 System.out.println("Local Port: " + clientSocket.getLocalPort());
@@ -46,11 +50,14 @@ public class Server {
                     while((clientMsg = in.readLine()) != null)
                     {
                         System.out.println("Message from client " + i + ": " + clientMsg);
-                        out.write("Server Ack " + clientMsg + "\n");
+                        out.write("server.Server Ack " + clientMsg + "\n");
                         out.flush();
+
+                         controller.getCommand(clientMsg);
+                        // need to have a way to parse the data to the correct format
                         System.out.println("Response sent");
                     }
-                    System.out.println("Server closed the client connection!!!!! - received null");
+                    System.out.println("server.Server closed the client connection!!!!! - received null");
                 }
 
                 catch(SocketException e)
