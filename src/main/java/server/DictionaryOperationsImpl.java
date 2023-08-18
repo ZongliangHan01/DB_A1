@@ -11,9 +11,9 @@ public class DictionaryOperationsImpl implements DictionaryOperations{
 
     @Override
     public String deleteWord(String targetWord) {
-        Word[] words = loadDatabase();
-        String responseText = "Some error may occur";
         File jsonFile = new File("src/main/java/server/dictionary.json");
+        Word[] words = loadDatabase(jsonFile);
+        String responseText = "Some error may occur";
         boolean exist = false;
         List<Word> updatedWords = new ArrayList<>();
 
@@ -38,10 +38,10 @@ public class DictionaryOperationsImpl implements DictionaryOperations{
 
     @Override
     public String updateWord(String targetWord, String newMeaning) {
-        Word[] words = loadDatabase();
+        File jsonFile = new File("src/main/java/server/dictionary.json");
+        Word[] words = loadDatabase(jsonFile);
         String responseText = "Some error may occur";
         boolean exist = false;
-        File jsonFile = new File("src/main/java/server/dictionary.json");
         for (Word word: words) {
             if (word.getWord().equals(targetWord)) {
                 word.setMeaning(newMeaning);
@@ -66,7 +66,7 @@ public class DictionaryOperationsImpl implements DictionaryOperations{
         boolean exist = false;
         String responseText = "Some error may occur";
         File jsonFile = new File("src/main/java/server/dictionary.json");
-        Word[] words = loadDatabase();
+        Word[] words = loadDatabase(jsonFile);
         List<Word> wordsList = new ArrayList<>(Arrays.asList(words));
         Word wordToAdd = new Word(newWord, meaning);
         for (Word word : words) {
@@ -89,7 +89,8 @@ public class DictionaryOperationsImpl implements DictionaryOperations{
 
     @Override
     public String readWord(String targetWord) {
-        Word[] words = loadDatabase();
+        File jsonFile = new File("src/main/java/server/dictionary.json");
+        Word[] words = loadDatabase(jsonFile);
         boolean exist = false;
         String responseText = "Some error may occur";
         for (Word word : words) {
@@ -107,11 +108,11 @@ public class DictionaryOperationsImpl implements DictionaryOperations{
         return responseText;
     }
 
-    private Word[] loadDatabase() {
+    private Word[] loadDatabase(File jsonFile) {
         try {
             ObjectMapper objectMapper = new ObjectMapper();
             objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
-            File jsonFile = new File("src/main/java/server/dictionary.json");
+//            File jsonFile = new File("src/main/java/server/dictionary.json");
             Word[] words = objectMapper.readValue(jsonFile, Word[].class);
             return words;
         } catch (Exception e) {
