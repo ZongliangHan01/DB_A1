@@ -5,35 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b62a5d11-a172-4769-a0d4-b8474dfd3fde" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../dependency-reduced-pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/server/ClientHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/server/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/server/DictionaryOperations.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/server/DictionaryOperationsImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/server/Server.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/server/Word.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/server/dictionary.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/server/ClientHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/server/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/server/DictionaryOperations.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/server/DictionaryOperationsImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/server/Server.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/server/Word.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/original-serverApp-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/serverApp-1.0.jar" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/AddPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/ButtonPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/ClientGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/DeletePanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/MainPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/ReadPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/UpdatePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -57,11 +50,16 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "212",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "364",
     "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "/Users/zonglianghan/Desktop/DS/DS_A1/client",
-    "project.structure.last.edited": "Modules",
+    "last_opened_file_path": "/Users/zonglianghan/Desktop/DS/DS_A1/clientApp",
+    "project.structure.last.edited": "Problems",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -69,13 +67,26 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.client.Client">
+  <component name="RunManager" selected="Application.ClientGUI">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.myapp.client.Client" />
       <module name="clientApp" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.myapp.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="client.ClientGUI" />
+      <module name="clientApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,11 +108,13 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.ClientGUI" />
       <item itemvalue="Application.Client" />
       <item itemvalue="Application.client.Client" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ClientGUI" />
         <item itemvalue="Application.client.Client" />
         <item itemvalue="Application.Client" />
       </list>
