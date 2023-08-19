@@ -50,12 +50,12 @@
   "word" : "pen",
   "meaning" : "penpenpen"
 }, {
-  "word" : "hello",
-  "meaning" : "hihihi"
-}, {
   "word" : "phone",
   "meaning" : "a communication device"
 }, {
   "word" : "sky",
   "meaning" : "sky is just sky"
+}, {
+  "word" : "hello",
+  "meaning" : "hihihi"
 } ]

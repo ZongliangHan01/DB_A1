@@ -1,7 +1,5 @@
 package server;
 
-import java.util.Arrays;
-
 public class Controller {
     DictionaryOperationsImpl operations = new DictionaryOperationsImpl();
 

@@ -1,0 +1,6 @@
+server/Word.class
+server/DictionaryOperations.class
+server/ClientHandler.class
+server/Server.class
+server/DictionaryOperationsImpl.class
+server/Controller.class

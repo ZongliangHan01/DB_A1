@@ -21,7 +21,7 @@ public class Server {
                 //Accept an incoming client connection request
                 Socket clientSocket = listeningSocket.accept(); //This method will block until a connection request is received
                 i++;
-                System.out.println("client.Client conection number " + i + " accepted:");
+                System.out.println("com.myapp.client.Client conection number " + i + " accepted:");
                 //System.out.println("Remote Port: " + clientSocket.getPort());
                 System.out.println("Remote Hostname: " + clientSocket.getInetAddress().getHostName());
                 System.out.println("Local Port: " + clientSocket.getLocalPort());
