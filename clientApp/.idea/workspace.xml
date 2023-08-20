@@ -5,20 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b62a5d11-a172-4769-a0d4-b8474dfd3fde" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/client/sendable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/client/AddPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/AddPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/ButtonPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/ButtonPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/ClientGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/ClientGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/client/DeletePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/DeletePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/MainPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/MainPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/client/ReadPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/ReadPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/client/UpdatePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/UpdatePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/client/ButtonPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/ButtonPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/client/ClientGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/ClientGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/client/MainPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/MainPanel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/client/UpdatePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/UpdatePanel.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +78,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClientGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="ClientGUI" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="client.ClientGUI" />
       <module name="clientApp" />
       <extension name="coverage">

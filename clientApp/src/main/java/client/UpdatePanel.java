@@ -61,6 +61,7 @@ public class UpdatePanel extends JPanel {
                 String userInput = "update#"+word+"#"+meaning;
                 // Pass the userInput to your client class for processing
                 String response = Client.sendRequest(userInput);
+                textArea.setText("");
                 textArea.setVisible(true);
                 textArea.setBackground(Color.red);
                 textArea.append(response);
@@ -73,5 +74,32 @@ public class UpdatePanel extends JPanel {
         constraints.fill = GridBagConstraints.HORIZONTAL;
         add(textArea, constraints);
         textArea.setVisible(false);
+
+
+        JButton clearBtn = new JButton("Clear");
+        constraints.gridx = 3; // Column 0
+        constraints.gridy = 2; // Row 0
+        add(clearBtn, constraints);
+
+        clearBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                clear();
+            }
+        });
     }
+
+    private void clear() {
+        Component[] components = getComponents();
+        for (Component component: components) {
+            if (component instanceof JTextField) {
+                ((JTextField) component).setText("");
+            }
+            if (component instanceof JTextArea) {
+                ((JTextArea) component).setText("");
+                ((JTextArea) component).setVisible(false);
+            }
+        }
+    }
+
 }

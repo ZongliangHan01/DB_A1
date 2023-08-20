@@ -8,6 +8,8 @@ import java.awt.event.ActionListener;
 public class AddPanel extends JPanel {
     private String addMsg;
     private JTextArea textArea;
+    private JTextField wordField;
+
     public AddPanel() {
 
         setPreferredSize(new Dimension(200, 150));
@@ -61,6 +63,7 @@ public class AddPanel extends JPanel {
                 String userInput = "add#"+word+"#"+meaning;
                 // Pass the userInput to your client class for processing
                 String response = Client.sendRequest(userInput);
+                textArea.setText("");
                 textArea.setVisible(true);
                 textArea.setBackground(Color.red);
                 textArea.append(response);
@@ -73,5 +76,31 @@ public class AddPanel extends JPanel {
         constraints.fill = GridBagConstraints.HORIZONTAL;
         add(textArea, constraints);
         textArea.setVisible(false);
+
+        JButton clearBtn = new JButton("Clear");
+        constraints.gridx = 3; // Column 0
+        constraints.gridy = 2; // Row 0
+        add(clearBtn, constraints);
+
+        clearBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                clear();
+            }
+        });
     }
+
+    private void clear() {
+        Component[] components = getComponents();
+        for (Component component: components) {
+            if (component instanceof JTextField) {
+                ((JTextField) component).setText("");
+            }
+            if (component instanceof JTextArea) {
+                ((JTextArea) component).setText("");
+                ((JTextArea) component).setVisible(false);
+            }
+        }
+    }
+
 }

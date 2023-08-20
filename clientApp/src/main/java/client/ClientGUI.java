@@ -26,7 +26,7 @@ public class ClientGUI {
         // Create a JFrame
         JFrame frame = new JFrame("Three Button GUI");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(500, 500);
+        frame.setSize(600, 600);
 
 //        JPanel buttonPanel = new ButtonPanel();
         // Create a JPanel to hold the buttons
