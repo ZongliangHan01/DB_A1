@@ -51,8 +51,14 @@
   "meaning" : "penpenpen"
 }, {
   "word" : "phone",
-  "meaning" : "a communication device"
+  "meaning" : "phone is a phone"
 }, {
   "word" : "sky",
   "meaning" : "sky is not a sky"
+}, {
+  "word" : "oxygen",
+  "meaning" : "氧气"
+}, {
+  "word" : "hello",
+  "meaning" : "lalalalaalla"
 } ]
