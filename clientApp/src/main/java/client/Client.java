@@ -71,4 +71,9 @@ public class Client {
         }
 
     }
+
+    public static void processInput(String userInput) {
+        // Process the user input here (e.g., send it to a server)
+        System.out.println("Received input: " + userInput);
+    }
 }
