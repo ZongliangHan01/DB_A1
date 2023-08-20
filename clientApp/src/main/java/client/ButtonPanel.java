@@ -35,6 +35,7 @@ public class ButtonPanel extends JPanel {
             public void actionPerformed(ActionEvent e) {
                 MainPanel cardPanel = (MainPanel) getParent();
                 cardPanel.getCardLayout().show(cardPanel.getCardPanel(), "readPanel");
+                clearText(cardPanel.getCardPanel());
             }
         });
 
@@ -43,6 +44,7 @@ public class ButtonPanel extends JPanel {
             public void actionPerformed(ActionEvent e) {
                 MainPanel cardPanel = (MainPanel) getParent();
                 cardPanel.getCardLayout().show(cardPanel.getCardPanel(), "updatePanel");
+                clearText(cardPanel.getCardPanel());
             }
         });
 
@@ -51,6 +53,7 @@ public class ButtonPanel extends JPanel {
             public void actionPerformed(ActionEvent e) {
                 MainPanel cardPanel = (MainPanel) getParent();
                 cardPanel.getCardLayout().show(cardPanel.getCardPanel(), "addPanel");
+                clearText(cardPanel.getCardPanel());
             }
         });
 
@@ -59,17 +62,30 @@ public class ButtonPanel extends JPanel {
             public void actionPerformed(ActionEvent e) {
                 MainPanel cardPanel = (MainPanel) getParent();
                 cardPanel.getCardLayout().show(cardPanel.getCardPanel(), "deletePanel");
+                clearText(cardPanel.getCardPanel());
             }
         });
     }
 
-    public void addListener(JPanel panel) {
-        readBtn.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                cardLayout.show(cardPanel, panel.getName());
+    private void clearText(JPanel cardPanel) {
+        Component[] panels = cardPanel.getComponents();
+        for (Component panel : panels) {
+            // Check if the component is a panel
+            if (panel instanceof JPanel) {
+//                JPanel panel = (JPanel) panel;
+                Component[] comps = ((JPanel) panel).getComponents();
+                for (Component comp: comps ) {
+                    if (comp instanceof JTextArea) {
+                        ((JTextArea) comp).setText("");
+                    }
+                    if (comp instanceof JTextField) {
+                        ((JTextField) comp).setText("");
+                    }
+                }
             }
-        });
+        }
     }
+
+
 }
 
