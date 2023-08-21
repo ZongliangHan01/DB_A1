@@ -29,7 +29,7 @@ public class DictionaryOperationsImpl implements DictionaryOperations{
         }
         if (!exist) {
             System.out.println("This word does not exist in dictionary");
-            responseText = "This word does not exist in dictionary";
+            responseText = "Error: This word does not exist in dictionary";
         }
 
         writeIntoDatabase(jsonFile, updatedWords);

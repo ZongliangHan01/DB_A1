@@ -7,18 +7,11 @@
     <list default="true" id="b62a5d11-a172-4769-a0d4-b8474dfd3fde" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/client/AddPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/AddPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/DeletePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/DeletePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/client/ReadPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/ReadPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/client/UpdatePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/UpdatePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/client/UpdatePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/UpdatePanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../serverApp/src/main/java/server/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../serverApp/src/main/java/server/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../serverApp/src/main/java/server/DictionaryOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/../serverApp/src/main/java/server/DictionaryOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../serverApp/src/main/java/server/DictionaryOperationsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../serverApp/src/main/java/server/DictionaryOperationsImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../serverApp/src/main/java/server/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/../serverApp/src/main/java/server/Word.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../serverApp/src/main/java/server/dictionary.json" beforeDir="false" afterPath="$PROJECT_DIR$/../serverApp/src/main/java/server/dictionary.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../serverApp/target/classes/server/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/../serverApp/target/classes/server/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../serverApp/target/classes/server/DictionaryOperations.class" beforeDir="false" afterPath="$PROJECT_DIR$/../serverApp/target/classes/server/DictionaryOperations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../serverApp/target/classes/server/DictionaryOperationsImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../serverApp/target/classes/server/DictionaryOperationsImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../serverApp/target/classes/server/Word.class" beforeDir="false" afterPath="$PROJECT_DIR$/../serverApp/target/classes/server/Word.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

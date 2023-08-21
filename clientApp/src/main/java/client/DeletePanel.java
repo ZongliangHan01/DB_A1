@@ -23,24 +23,31 @@ public class DeletePanel extends JPanel {
         // Create labels and text fields
 //        JLabel wordLabel = new JLabel("search");
 
-        JTextField searchField = new JTextField(30);
+        JTextField deleteField = new JTextField(30);
         constraints.gridx = 1; // Column 0
         constraints.gridy = 2; // Row 0
         constraints.fill = GridBagConstraints.HORIZONTAL;
-        add(searchField, constraints);
+        add(deleteField, constraints);
 
 
-        JButton readBtn = new JButton("Delete");
+        JButton deleteBtn = new JButton("Delete");
         constraints.gridx = 1; // Column 0
         constraints.gridy = 4; // Row 0
-        add(readBtn, constraints);
+        add(deleteBtn, constraints);
 
-        readBtn.addActionListener(new ActionListener() {
+        deleteBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String userInput = "delete#"+searchField.getText();
+                String response = "";
+                String userInput = "delete#";
+                String text = deleteField.getText().trim();
+                if (!text.isEmpty()) {
+                    userInput = userInput + text;
+                    response = Client.sendRequest(userInput);
+                } else {
+                    response = "Error: Please type the word to delete.";
+                }
                 // Pass the userInput to your client class for processing
-                String response = Client.sendRequest(userInput);
                 textArea.setText("");
                 textArea.setVisible(true);
                 textArea.setBackground(Color.red);

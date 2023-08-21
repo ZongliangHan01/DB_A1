@@ -40,9 +40,25 @@ public class ReadPanel extends JPanel implements sendable{
         readBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String userInput = searchField.getText();
+//                String userInput = searchField.getText();
+//                // Pass the userInput to your client class for processing
+//                String response = format(Client.sendRequest("read#"+userInput));
+//                textArea.setText("");
+//                textArea.setVisible(true);
+//                textArea.setBackground(Color.red);
+//                textArea.append(response);
+
+
+                String response = "";
+                String userInput = "read#";
+                String text = searchField.getText().trim();
+                if (!text.isEmpty()) {
+                    userInput = userInput + text;
+                    response = format(Client.sendRequest(userInput));
+                } else {
+                    response = "Error: Please type the word to delete.";
+                }
                 // Pass the userInput to your client class for processing
-                String response = format(Client.sendRequest("read#"+userInput));
                 textArea.setText("");
                 textArea.setVisible(true);
                 textArea.setBackground(Color.red);
@@ -76,6 +92,10 @@ public class ReadPanel extends JPanel implements sendable{
         String format = "";
         String[] split = response.split("#");
         for (String string: split) {
+            if (string.equals("Word does not find")) {
+                format = "Error: Word does not find.";
+                break;
+            }
             format = format + "• " + string + "\n";
         }
         return format;

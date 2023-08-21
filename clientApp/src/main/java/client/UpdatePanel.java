@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 
 public class UpdatePanel extends JPanel {
     private JTextArea textArea;
-    private JButton addBtn;
+    private JButton updateBtn;
     //    private JTextField wordField;
 //    private JPanel textFieldPanel;
     private int numMean = 1;
@@ -75,10 +75,10 @@ public class UpdatePanel extends JPanel {
         add(plusBtn, constraints);
 
 
-        this.addBtn = new JButton("Update");
+        this.updateBtn = new JButton("Update");
         constraints.gridx = 1; // Column 0
         constraints.gridy = 3; // Row 0
-        add(addBtn, constraints);
+        add(updateBtn, constraints);
 
 
         plusBtn.addActionListener(new ActionListener() {
@@ -88,19 +88,32 @@ public class UpdatePanel extends JPanel {
             }
         });
 
-        addBtn.addActionListener(new ActionListener() {
+        updateBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String userInput = "update";
+                boolean isEmptyField = false;
                 Component[] components = getComponents();
                 for (Component component: components) {
                     if (component instanceof JTextField) {
                         JTextField textField = (JTextField) component;
-                        userInput = userInput + "#" + textField.getText();
+                        String text = textField.getText().trim(); // Remove leading and trailing spaces
+
+                        // Check if the text is empty
+                        if (!text.isEmpty()) {
+                            userInput = userInput + "#" + text;
+                        } else {
+                            isEmptyField = true; // Set the flag to true if an empty field is found
+                        }
                     }
                 }
+                String response = "";
+                if (!isEmptyField) {
+                    response = Client.sendRequest(userInput);
+                } else {
+                    response = "Error: Please fill all the text field.";
+                }
                 // Pass the userInput to your client class for processing
-                String response = Client.sendRequest(userInput);
                 textArea.setText("");
                 textArea.setVisible(true);
                 textArea.setBackground(Color.red);
@@ -149,7 +162,7 @@ public class UpdatePanel extends JPanel {
         constraints.gridx = 1;
         constraints.gridy = numMean+2;
         GridBagLayout layout = (GridBagLayout) getLayout();
-        layout.setConstraints(addBtn, constraints);
+        layout.setConstraints(updateBtn, constraints);
         System.out.println("add new meaning field");
 
         constraints.gridx = 1; // Column 0
