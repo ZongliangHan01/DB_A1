@@ -5,12 +5,12 @@ import java.util.ArrayList;
 
 public class Word {
     private String word;
-    private String meaning;
+    private String[] meanings;
 //    private List<String> stringList = new ArrayList<>();
 
-    public Word(String word, String meaning) {
+    public Word(String word, String[] meanings) {
         this.word = word;
-        this.meaning = meaning;
+        this.meanings = meanings;
     }
 
     public Word() {
@@ -25,11 +25,18 @@ public class Word {
         this.word = word;
     }
 
-    public String getMeaning() {
-        return meaning;
-    }
+//    public String getMeaning() {
+//        String meaning = "";
+//        for (String mean : meanings) {
+//            meaning = meaning + mean + "#";
+//        }
+//        return meaning;
+//    }
 
-    public void setMeaning(String meaning) {
-        this.meaning = meaning;
+    public String[] getMeaning() {
+        return meanings;
+    }
+    public void setMeaning(String[] meanings) {
+        this.meanings = meanings;
     }
 }

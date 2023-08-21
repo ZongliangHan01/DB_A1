@@ -91,9 +91,17 @@ public class AddPanel extends JPanel {
         addBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String word = wordField.getText();
-                String meaning = meaningField.getText();
-                String userInput = "add#"+word+"#"+meaning;
+                String userInput = "add";
+                Component[] components = getComponents();
+                for (Component component: components) {
+                    if (component instanceof JTextField) {
+                        JTextField textField = (JTextField) component;
+                        userInput = userInput + "#" + textField.getText();
+                    }
+                }
+//                String word = wordField.getText();
+//                String meaning = meaningField.getText();
+//                String userInput = "add#"+word+"#"+meaning;
                 // Pass the userInput to your client class for processing
                 String response = Client.sendRequest(userInput);
                 textArea.setText("");

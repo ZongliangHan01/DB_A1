@@ -42,7 +42,7 @@ public class ReadPanel extends JPanel implements sendable{
             public void actionPerformed(ActionEvent e) {
                 String userInput = searchField.getText();
                 // Pass the userInput to your client class for processing
-                String response = Client.sendRequest("read#"+userInput);
+                String response = format(Client.sendRequest("read#"+userInput));
                 textArea.setText("");
                 textArea.setVisible(true);
                 textArea.setBackground(Color.red);
@@ -72,6 +72,14 @@ public class ReadPanel extends JPanel implements sendable{
 
     }
 
+    private String format(String response) {
+        String format = "";
+        String[] split = response.split("#");
+        for (String string: split) {
+            format = format + "• " + string + "\n";
+        }
+        return format;
+    }
     private void clear() {
         Component[] components = getComponents();
         for (Component component: components) {

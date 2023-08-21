@@ -5,7 +5,7 @@ public class Controller {
 
     //TODO: function to parse the string to the right format
     private String[] handleInput(String input) {
-        String[] inputSplit = new String[3];
+        String[] inputSplit = new String[10];
         String[] split = input.split("#");
         int i=0;
         for (String str: split) {
@@ -14,7 +14,7 @@ public class Controller {
         }
 //        Arrays.fill(inputSplit, "null");
 
-        return inputSplit;
+        return split;
     }
 
 
@@ -23,19 +23,27 @@ public class Controller {
         String response;
         String command = inputSplit[0];
         String word = inputSplit[1];
-        String meaning = inputSplit[2];
+        String[] meanings = new String[inputSplit.length-2];
+        for (int i = 2; i < inputSplit.length; i++) {
+            meanings[i - 2] = inputSplit[i];
+        }
         for (String str: inputSplit) {
             System.out.println(str);
         }
+
+        for (String str: meanings) {
+            System.out.println(str);
+        }
+
         switch (command) {
             case "read":
                 response = readWord(word);
                 break;
             case "add":
-                response = addWord(word, meaning);
+                response = addWord(word, meanings);
                 break;
             case "update":
-                response = updateWord(word, meaning);
+                response = updateWord(word, meanings);
                 break;
             case "delete":
                 response = deleteWord(word);
@@ -56,11 +64,11 @@ public class Controller {
         return operations.deleteWord(targetWord);
     }
 
-    private String updateWord(String targetWord, String newMeaning) {
-        return operations.updateWord(targetWord, newMeaning);
+    private String updateWord(String targetWord, String[] newMeanings) {
+        return operations.updateWord(targetWord, newMeanings);
     }
 
-    private String addWord(String newWord, String meaning) {
-       return operations.addWord(newWord, meaning);
+    private String addWord(String newWord, String[] meanings) {
+       return operations.addWord(newWord, meanings);
     }
 }

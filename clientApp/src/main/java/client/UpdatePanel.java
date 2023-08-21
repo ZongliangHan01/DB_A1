@@ -91,9 +91,14 @@ public class UpdatePanel extends JPanel {
         addBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String word = wordField.getText();
-                String meaning = meaningField.getText();
-                String userInput = "update#"+word+"#"+meaning;
+                String userInput = "update";
+                Component[] components = getComponents();
+                for (Component component: components) {
+                    if (component instanceof JTextField) {
+                        JTextField textField = (JTextField) component;
+                        userInput = userInput + "#" + textField.getText();
+                    }
+                }
                 // Pass the userInput to your client class for processing
                 String response = Client.sendRequest(userInput);
                 textArea.setText("");

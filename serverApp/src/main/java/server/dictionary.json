@@ -1,64 +1,64 @@
 [ {
-  "word" : "world",
-  "meaning" : "the earth and all people and things on it"
-}, {
-  "word" : "apple",
-  "meaning" : "a fruit with a red or green skin and firm white flesh"
-}, {
-  "word" : "computer",
-  "meaning" : "an electronic device for storing and processing data"
-}, {
-  "word" : "sun",
-  "meaning" : "the star that provides light and heat for the earth"
-}, {
-  "word" : "moon",
-  "meaning" : "the natural satellite of the earth"
-}, {
-  "word" : "mountain",
-  "meaning" : "a large natural elevation of the earth's surface"
-}, {
-  "word" : "car",
-  "meaning" : "a road vehicle, typically with four wheels, powered by an internal combustion engine"
-}, {
-  "word" : "tree",
-  "meaning" : "a woody perennial plant with a single main stem or trunk"
-}, {
-  "word" : "water",
-  "meaning" : "a colorless, transparent, odorless liquid that forms the seas, lakes, rivers, and rain"
-}, {
-  "word" : "flower",
-  "meaning" : "the reproductive structure found in flowering plants"
-}, {
-  "word" : "bird",
-  "meaning" : "a warm-blooded vertebrate with feathers and beaks"
-}, {
-  "word" : "dog",
-  "meaning" : "a domesticated mammal known for its loyalty and companionship"
+  "word" : "goodbye",
+  "meaning" : [ "v. farewell" ]
 }, {
   "word" : "cat",
-  "meaning" : "a small carnivorous mammal kept as a pet or for catching rats"
+  "meaning" : [ "n. a domestic animal" ]
 }, {
-  "word" : "house",
-  "meaning" : "a building for human habitation"
+  "word" : "computer",
+  "meaning" : [ "n. an electronic device" ]
 }, {
-  "word" : "food",
-  "meaning" : "any nutritious substance that people or animals eat or drink"
+  "word" : "book",
+  "meaning" : [ "n. a written or printed work" ]
 }, {
-  "word" : "music",
-  "meaning" : "vocal or instrumental sounds combined in such a way as to produce beauty of form, harmony, and expression"
+  "word" : "run",
+  "meaning" : [ "v. to move quickly on foot" ]
 }, {
-  "word" : "pen",
-  "meaning" : "penpenpen"
+  "word" : "tree",
+  "meaning" : [ "n. a woody plant" ]
 }, {
   "word" : "phone",
-  "meaning" : "phone is a phone"
+  "meaning" : [ "n. a communication device" ]
 }, {
-  "word" : "sky",
-  "meaning" : "sky is not a sky"
+  "word" : "eat",
+  "meaning" : [ "v. to consume food" ]
 }, {
-  "word" : "oxygen",
-  "meaning" : "氧气"
+  "word" : "car",
+  "meaning" : [ "n. a motor vehicle" ]
 }, {
-  "word" : "hello",
-  "meaning" : "lalalalaalla"
+  "word" : "watch",
+  "meaning" : [ "v. to observe", "n. a timekeeping device" ]
+}, {
+  "word" : "house",
+  "meaning" : [ "n. a building where people live", "n. a legislative body" ]
+}, {
+  "word" : "play",
+  "meaning" : [ "v. to engage in an activity for enjoyment", "n. a dramatic performance" ]
+}, {
+  "word" : "paint",
+  "meaning" : [ "v. to apply color to a surface", "n. a colored substance" ]
+}, {
+  "word" : "fly",
+  "meaning" : [ "v. to move through the air with wings", "n. a flying insect" ]
+}, {
+  "word" : "bank",
+  "meaning" : [ "n. a financial institution", "n. the side of a river" ]
+}, {
+  "word" : "light",
+  "meaning" : [ "n. visible radiant energy", "adj. not heavy" ]
+}, {
+  "word" : "watch",
+  "meaning" : [ "v. to observe", "n. a timekeeping device", "n. a period of time spent observing" ]
+}, {
+  "word" : "break",
+  "meaning" : [ "v. to separate into pieces", "n. a pause or interruption" ]
+}, {
+  "word" : "run",
+  "meaning" : [ "v. to move quickly on foot", "n. a continuous period of operation" ]
+}, {
+  "word" : "close",
+  "meaning" : [ "v. to shut", "adj. near in space or time" ]
+}, {
+  "word" : "remote",
+  "meaning" : [ "adj. distant in space", "adj. unlikely or unreachable" ]
 } ]
