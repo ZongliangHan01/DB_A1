@@ -17,23 +17,42 @@ public class ButtonPanel extends JPanel {
     private JButton refreshBtn;
 
     public ButtonPanel() {
-        JButton readBtn = new JButton("Look Up");
-        JButton addBtn = new JButton("Add");
-        JButton updateBtn = new JButton("Update");
-        JButton deleteBtn = new JButton("Delete");
-        JButton refreshBtn = new JButton("Refresh");
+        GridBagConstraints constraints = new GridBagConstraints();
+//        constraints.insets = new Insets(20, 10, 20, 10);
+        setLayout(new FlowLayout(FlowLayout.CENTER, 50, 20));
+        setBackground(Color.decode("#E9C893"));
 
-        this.readBtn = readBtn;
-        this.addBtn = addBtn;
-        this.updateBtn = updateBtn;
-        this.deleteBtn = deleteBtn;
-        this.refreshBtn = refreshBtn;
+        readBtn = new JButton("Look Up");
+        addBtn = new JButton("Add");
+        updateBtn = new JButton("Update");
+        deleteBtn = new JButton("Delete");
+        refreshBtn = new JButton("Refresh");
 
-        add(readBtn);
-        add(addBtn);
-        add(updateBtn);
-        add(deleteBtn);
-        add(refreshBtn);
+//        this.readBtn = readBtn;
+//        this.addBtn = addBtn;
+//        this.updateBtn = updateBtn;
+//        this.deleteBtn = deleteBtn;
+//        this.refreshBtn = refreshBtn;
+
+        this.readBtn.setPreferredSize(new Dimension(80, 50));
+        this.addBtn.setPreferredSize(new Dimension(80, 50));
+        this.updateBtn.setPreferredSize(new Dimension(80, 50));
+        this.deleteBtn.setPreferredSize(new Dimension(80, 50));
+        this.refreshBtn.setPreferredSize(new Dimension(80, 50));
+
+        System.out.println(this.addBtn.getBackground());
+
+        add(this.readBtn, constraints);
+        add(this.addBtn, constraints);
+        add(this.updateBtn, constraints);
+        add(this.deleteBtn, constraints);
+        add(this.refreshBtn, constraints);
+
+        readBtn.setBackground(Color.decode("#AB9353"));
+        addBtn.setBackground(Color.decode("#AB9353"));
+        updateBtn.setBackground(Color.decode("#AB9353"));
+        deleteBtn.setBackground(Color.decode("#AB9353"));
+        refreshBtn.setBackground(Color.decode("#FF3B3F"));
 
         readBtn.addActionListener(new ActionListener() {
             @Override
@@ -90,6 +109,7 @@ public class ButtonPanel extends JPanel {
                 for (Component comp: comps ) {
                     if (comp instanceof JTextArea) {
                         ((JTextArea) comp).setText("");
+                        ((JTextArea) comp).setVisible(false);
                     }
                     if (comp instanceof JTextField) {
                         ((JTextField) comp).setText("");

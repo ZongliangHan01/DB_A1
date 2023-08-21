@@ -13,28 +13,35 @@ public class ReadPanel extends JPanel implements sendable{
     public ReadPanel() {
 
         setPreferredSize(new Dimension(200, 150));
-        setBackground(Color.RED);
+        setBackground(Color.decode("#C09F80"));
         setLayout(new GridBagLayout());
         GridBagConstraints constraints = new GridBagConstraints();
+        constraints.insets = new Insets(10, 5, 10, 5);
 
-        JLabel label = new JLabel("read Panel");
-//        this.label = label;
+        JLabel label = new JLabel("Search");
         constraints.gridx = 1; // Column 0
         constraints.gridy = 0; // Row 0
+        label.setPreferredSize(new Dimension(200, 100));
+        label.setHorizontalAlignment(SwingConstants.CENTER);
+        Font customFont = new Font("Comic Sans MS", Font.BOLD + Font.ITALIC, 28); // Font name, style, size
+        label.setFont(customFont);
         add(label, constraints);
-        // Create labels and text fields
-//        JLabel wordLabel = new JLabel("search");
 
+        // Create labels and text fields
         this.searchField = new JTextField(30);
         constraints.gridx = 1; // Column 0
         constraints.gridy = 2; // Row 0
 //        constraints.fill = GridBagConstraints.HORIZONTAL;
+        searchField.setPreferredSize(new Dimension(100, 50));
         add(this.searchField, constraints);
 
 
         JButton readBtn = new JButton("Look Up");
         constraints.gridx = 1; // Column 0
         constraints.gridy = 4; // Row 0
+        readBtn.setPreferredSize(new Dimension(90, 50));
+        customFont = new Font("Comic Sans MS", Font.PLAIN, 18); // Font name, style, size
+        readBtn.setFont(customFont);
         add(readBtn, constraints);
 
         readBtn.addActionListener(new ActionListener() {
@@ -56,12 +63,14 @@ public class ReadPanel extends JPanel implements sendable{
                     userInput = userInput + text;
                     response = format(Client.sendRequest(userInput));
                 } else {
-                    response = "Error: Please type the word to delete.";
+                    response = "Error: Please enter the word to search.";
                 }
                 // Pass the userInput to your client class for processing
                 textArea.setText("");
                 textArea.setVisible(true);
-                textArea.setBackground(Color.red);
+                textArea.setBackground(Color.decode("#C09F80"));
+                Font customFont = new Font("Comic Sans MS", Font.BOLD, 28); // Font name, style, size
+                textArea.setFont(customFont);
                 textArea.append(response);
             }
         });
@@ -70,13 +79,20 @@ public class ReadPanel extends JPanel implements sendable{
         this.textArea = new JTextArea();
         constraints.gridx = 1; // Column 0
         constraints.gridy = 6; // Row 0
-//        constraints.fill = GridBagConstraints.HORIZONTAL;
+
+        constraints.fill = GridBagConstraints.HORIZONTAL;
+        textArea.setPreferredSize(new Dimension( 500, 100));
         add(textArea, constraints);
         textArea.setVisible(false);
+        textArea.setLineWrap(true);
+        textArea.setWrapStyleWord(true);
 
         JButton clearBtn = new JButton("Clear");
         constraints.gridx = 3; // Column 0
         constraints.gridy = 2; // Row 0
+        clearBtn.setPreferredSize(new Dimension(80, 50));
+        customFont = new Font("Comic Sans MS", Font.PLAIN, 18); // Font name, style, size
+        clearBtn.setFont(customFont);
         add(clearBtn, constraints);
 
         clearBtn.addActionListener(new ActionListener() {

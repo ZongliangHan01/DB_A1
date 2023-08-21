@@ -15,32 +15,46 @@ public class AddPanel extends JPanel {
     public AddPanel() {
 
         setPreferredSize(new Dimension(200, 150));
-        setBackground(Color.RED);
+        setBackground(Color.decode("#C09F80"));
         setLayout(new GridBagLayout());
         GridBagConstraints constraints = new GridBagConstraints();
+        constraints.insets = new Insets(10, 1, 10, 1);
 
-        JLabel label = new JLabel("Add Panel");
+        JLabel label = new JLabel("Add New Word");
 //        this.label = label;
         constraints.gridx = 1; // Column 0
         constraints.gridy = 0; // Row 0
+        label.setPreferredSize(new Dimension(300, 100));
+        label.setHorizontalAlignment(SwingConstants.CENTER);
+        Font customFont = new Font("Comic Sans MS", Font.BOLD + Font.ITALIC, 28); // Font name, style, size
+        label.setFont(customFont);
         add(label, constraints);
+
         // Create labels and text fields
 //        JLabel wordLabel = new JLabel("search");
         JLabel wordLabel = new JLabel("New Word");
         constraints.gridx = 0; // Column 0
         constraints.gridy = 1; // Row 0
         constraints.fill = GridBagConstraints.HORIZONTAL;
+        wordLabel.setPreferredSize(new Dimension(100, 50));
+        wordLabel.setHorizontalAlignment(SwingConstants.CENTER);
+        customFont = new Font("Comic Sans MS", Font.BOLD + Font.ITALIC, 18); // Font name, style, size
+        wordLabel.setFont(customFont);
         add(wordLabel, constraints);
 
         JTextField wordField = new JTextField(30);
         constraints.gridx = 1; // Column 0
         constraints.gridy = 1; // Row 0
         constraints.fill = GridBagConstraints.HORIZONTAL;
+        wordField.setPreferredSize(new Dimension(100, 50));
         add(wordField, constraints);
 
         JButton clearBtn = new JButton("Clear");
         constraints.gridx = 3; // Column 0
         constraints.gridy = 1; // Row 0
+        clearBtn.setPreferredSize(new Dimension(80, 50));
+        customFont = new Font("Comic Sans MS", Font.PLAIN, 18); // Font name, style, size
+        clearBtn.setFont(customFont);
         add(clearBtn, constraints);
 
         clearBtn.addActionListener(new ActionListener() {
@@ -61,23 +75,34 @@ public class AddPanel extends JPanel {
         constraints.gridx = 0; // Column 0
         constraints.gridy = 2; // Row 0
         constraints.fill = GridBagConstraints.HORIZONTAL;
+        meanLabel.setPreferredSize(new Dimension(100, 50));
+        meanLabel.setHorizontalAlignment(SwingConstants.CENTER);
+        customFont = new Font("Comic Sans MS", Font.BOLD + Font.ITALIC, 18); // Font name, style, size
+        meanLabel.setFont(customFont);
         add(meanLabel, constraints);
 
         JTextField meaningField = new JTextField(30);
         constraints.gridx = 1; // Column 0
         constraints.gridy = 2; // Row 0
         constraints.fill = GridBagConstraints.HORIZONTAL;
+        meaningField.setPreferredSize(new Dimension(100, 50));
         add(meaningField, constraints);
 
         JButton plusBtn = new JButton("+");
         constraints.gridx = 3; // Column 0
         constraints.gridy = 2; // Row 0
+        plusBtn.setPreferredSize(new Dimension(80, 50));
+        customFont = new Font("Comic Sans MS", Font.PLAIN, 18); // Font name, style, size
+        plusBtn.setFont(customFont);
         add(plusBtn, constraints);
 
 
         this.addBtn = new JButton("Add");
         constraints.gridx = 1; // Column 0
         constraints.gridy = 3; // Row 0
+        addBtn.setPreferredSize(new Dimension(90, 50));
+        customFont = new Font("Comic Sans MS", Font.PLAIN, 18); // Font name, style, size
+        addBtn.setFont(customFont);
         add(addBtn, constraints);
 
 
@@ -118,7 +143,9 @@ public class AddPanel extends JPanel {
 //                String response = Client.sendRequest(userInput);
                 textArea.setText("");
                 textArea.setVisible(true);
-                textArea.setBackground(Color.red);
+                textArea.setBackground(Color.decode("#C09F80"));
+                Font customFont = new Font("Comic Sans MS", Font.BOLD, 28); // Font name, style, size
+                textArea.setFont(customFont);
                 textArea.append(response);
             }
         });
@@ -128,9 +155,11 @@ public class AddPanel extends JPanel {
         constraints.gridx = 1; // Column 0
         constraints.gridy = 4; // Row 0
         constraints.fill = GridBagConstraints.HORIZONTAL;
+        this.textArea.setVisible(false);
+        this.textArea.setPreferredSize(new Dimension( 500, 50));
+        this.textArea.setLineWrap(true);
+        this.textArea.setWrapStyleWord(true);
         add(textArea, constraints);
-        textArea.setVisible(false);
-
 
     }
 
@@ -141,17 +170,25 @@ public class AddPanel extends JPanel {
         constraints.gridx = 0; // Column 0
         constraints.gridy = numMean+1; // Row 0
         constraints.fill = GridBagConstraints.HORIZONTAL;
+        meanLabel.setPreferredSize(new Dimension(100, 50));
+        meanLabel.setHorizontalAlignment(SwingConstants.CENTER);
+        Font customFont = new Font("Comic Sans MS", Font.BOLD + Font.ITALIC, 18); // Font name, style, size
+        meanLabel.setFont(customFont);
         add(meanLabel, constraints);
 
         JTextField meaning = new JTextField("");
         constraints.gridx = 1; // Column 0
         constraints.gridy = numMean+1; // Row 0
         constraints.fill = GridBagConstraints.HORIZONTAL;
+        meaning.setPreferredSize(new Dimension(100, 50));
         add(meaning, constraints);
 
         JButton minusBtn = new JButton("-");
         constraints.gridx = 3; // Column 0
         constraints.gridy = numMean+1; // Row 0
+        minusBtn.setPreferredSize(new Dimension(80, 50));
+        customFont = new Font("Comic Sans MS", Font.PLAIN, 18); // Font name, style, size
+        minusBtn.setFont(customFont);
         add(minusBtn, constraints);
 
         minusBtn.addActionListener(new ActionListener() {
@@ -170,6 +207,10 @@ public class AddPanel extends JPanel {
         constraints.gridx = 1; // Column 0
         constraints.gridy = numMean+3; // Row 0
         constraints.fill = GridBagConstraints.HORIZONTAL;
+//        textArea.setPreferredSize(new Dimension( 500, 50));
+//        textArea.setVisible(false);
+//        textArea.setLineWrap(true);
+//        textArea.setWrapStyleWord(true);
         add(textArea, constraints);
 
         revalidate();
