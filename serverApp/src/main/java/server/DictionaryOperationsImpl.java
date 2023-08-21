@@ -73,7 +73,7 @@ public class DictionaryOperationsImpl implements DictionaryOperations{
         for (Word word : words) {
             if (word.getWord().equals(newWord)) {
                 System.out.println("this world already exist in the dictionary, please use update method");
-                responseText = "this world already exist in the dictionary, please use update method";
+                responseText = "Error: This world already exist in the dictionary, please use update method";
                 exist = true;
                 break;
             }

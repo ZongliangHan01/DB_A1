@@ -14,21 +14,26 @@ public class ButtonPanel extends JPanel {
     private JButton updateBtn;
     private JButton deleteBtn;
 
+    private JButton refreshBtn;
+
     public ButtonPanel() {
         JButton readBtn = new JButton("Look Up");
         JButton addBtn = new JButton("Add");
         JButton updateBtn = new JButton("Update");
         JButton deleteBtn = new JButton("Delete");
+        JButton refreshBtn = new JButton("Refresh");
 
         this.readBtn = readBtn;
         this.addBtn = addBtn;
         this.updateBtn = updateBtn;
         this.deleteBtn = deleteBtn;
+        this.refreshBtn = refreshBtn;
 
         add(readBtn);
         add(addBtn);
         add(updateBtn);
         add(deleteBtn);
+        add(refreshBtn);
 
         readBtn.addActionListener(new ActionListener() {
             @Override
@@ -63,6 +68,14 @@ public class ButtonPanel extends JPanel {
                 MainPanel cardPanel = (MainPanel) getParent();
                 cardPanel.getCardLayout().show(cardPanel.getCardPanel(), "deletePanel");
                 clearText(cardPanel.getCardPanel());
+            }
+        });
+
+        refreshBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ClientGUI clientGUI = new ClientGUI();
+                clientGUI.refresh();
             }
         });
     }

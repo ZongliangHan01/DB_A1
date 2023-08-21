@@ -26,7 +26,7 @@ public class ClientGUI {
         // Create a JFrame
         JFrame frame = new JFrame("Three Button GUI");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(600, 600);
+        frame.setSize(700, 700);
 
 //        JPanel buttonPanel = new ButtonPanel();
         // Create a JPanel to hold the buttons
@@ -45,7 +45,9 @@ public class ClientGUI {
         frame.setVisible(true);
     }
 
-
+    public void refresh() {
+        Client client = new Client();
+    }
 
     //    public void getClientMsg {
 //

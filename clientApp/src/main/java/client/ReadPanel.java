@@ -92,11 +92,27 @@ public class ReadPanel extends JPanel implements sendable{
         String format = "";
         String[] split = response.split("#");
         for (String string: split) {
-            if (string.equals("Word does not find")) {
-                format = "Error: Word does not find.";
-                break;
+            switch (string) {
+                case "Word does not find":
+                    format = "Error: Word does not find.";
+                    break;
+                case "no encode":
+                    format = "Error: Cannot decode the content. Please enter another word.";
+                    break;
+                case "no connection":
+                    format = "Error: Bad Connection. Please refresh.";
+                    break;
+                default:
+                    format = format + "• " + string + "\n";
             }
-            format = format + "• " + string + "\n";
+
+
+//            if (string.equals("Word does not find")) {
+//                format = "Error: Word does not find.";
+//                break;
+//            }
+//
+//            format = format + "• " + string + "\n";
         }
         return format;
     }
