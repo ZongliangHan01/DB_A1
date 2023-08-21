@@ -8,9 +8,12 @@ public class ClientHandler implements Runnable {
     private final Socket clientSocket;
     private final int clientId;
 
-    public ClientHandler(Socket socket, int clientId) {
+    private final File file;
+
+    public ClientHandler(Socket socket, int clientId, File file) {
         this.clientSocket = socket;
         this.clientId = clientId;
+        this.file = file;
     }
 
     @Override
@@ -18,8 +21,8 @@ public class ClientHandler implements Runnable {
         try {
             BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
             BufferedWriter out = new BufferedWriter(new OutputStreamWriter(clientSocket.getOutputStream()));
-            Controller controller = new Controller();
-            String clientMsg = null;
+            Controller controller = new Controller(file);
+            String clientMsg = "";
             try
             {
                 while((clientMsg = in.readLine()) != null)

@@ -8,11 +8,13 @@ import java.util.Arrays;
 import java.util.List;
 
 public class DictionaryOperationsImpl implements DictionaryOperations{
-
-    //TODO: update the way of accessing json file
+    File jsonFile;
+    public DictionaryOperationsImpl(File file) {
+        this.jsonFile = file;
+    }
     @Override
     public String deleteWord(String targetWord) {
-        File jsonFile = new File("/Users/zonglianghan/Desktop/DS/DS_A1/serverApp/src/main/java/server/dictionary.json");
+//        File jsonFile = new File("/Users/zonglianghan/Desktop/DS/DS_A1/serverApp/src/main/java/server/dictionary.json");
         Word[] words = loadDatabase(jsonFile);
         String responseText = "Some error may occur";
         boolean exist = false;
@@ -39,7 +41,7 @@ public class DictionaryOperationsImpl implements DictionaryOperations{
 
     @Override
     public String updateWord(String targetWord, String[] newMeanings) {
-        File jsonFile = new File("/Users/zonglianghan/Desktop/DS/DS_A1/serverApp/src/main/java/server/dictionary.json");
+//        File jsonFile = new File("/Users/zonglianghan/Desktop/DS/DS_A1/serverApp/src/main/java/server/dictionary.json");
         Word[] words = loadDatabase(jsonFile);
         String responseText = "Some error may occur";
         boolean exist = false;
@@ -66,7 +68,7 @@ public class DictionaryOperationsImpl implements DictionaryOperations{
     public String addWord(String newWord, String[] meanings) {
         boolean exist = false;
         String responseText = "Some error may occur";
-        File jsonFile = new File("/Users/zonglianghan/Desktop/DS/DS_A1/serverApp/src/main/java/server/dictionary.json");
+//        File jsonFile = new File("/Users/zonglianghan/Desktop/DS/DS_A1/serverApp/src/main/java/server/dictionary.json");
         Word[] words = loadDatabase(jsonFile);
         List<Word> wordsList = new ArrayList<>(Arrays.asList(words));
         Word wordToAdd = new Word(newWord, meanings);
@@ -90,7 +92,7 @@ public class DictionaryOperationsImpl implements DictionaryOperations{
 
     @Override
     public String readWord(String targetWord) {
-        File jsonFile = new File("/Users/zonglianghan/Desktop/DS/DS_A1/serverApp/src/main/java/server/dictionary.json");
+//        File jsonFile = new File("/Users/zonglianghan/Desktop/DS/DS_A1/serverApp/src/main/java/server/dictionary.json");
         Word[] words = loadDatabase(jsonFile);
         boolean exist = false;
         String responseText = "Some error may occur";

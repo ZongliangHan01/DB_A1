@@ -7,13 +7,16 @@ import java.util.Scanner;
 
 public class Client {
     public static Socket socket;
-    public Client() {
-
+    private String host;
+    private int port;
+    public Client(String host, int port) {
+        this.host = host;
+        this.port = port;
 //        Socket socket = null;
         try {
             // Create a stream socket bounded to any port and connect it to the
             // socket bound to localhost on port 4444
-            Socket socket = new Socket("localhost", 4444);
+            Socket socket = new Socket(host, port);
             System.out.println("Connection established");
             this.socket = socket;
 //            ConnectionMonitor monitor = new ConnectionMonitor(socket);

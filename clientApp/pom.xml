@@ -37,7 +37,7 @@
           <!-- Set the main class here -->
           <archive>
             <manifest>
-              <mainClass>client.Client</mainClass>
+              <mainClass>client.ClientGUI</mainClass>
             </manifest>
           </archive>
         </configuration>

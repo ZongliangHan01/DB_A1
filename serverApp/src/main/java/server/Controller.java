@@ -1,8 +1,15 @@
 package server;
 
-public class Controller {
-    DictionaryOperationsImpl operations = new DictionaryOperationsImpl();
+import java.io.File;
 
+public class Controller {
+    DictionaryOperationsImpl operations;
+    File file;
+
+    public Controller(File file) {
+        this.file = file;
+        this.operations =  new DictionaryOperationsImpl(file);
+    }
     //TODO: function to parse the string to the right format
     private String[] handleInput(String input) {
         String[] inputSplit = new String[10];

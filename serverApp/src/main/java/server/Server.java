@@ -1,4 +1,5 @@
 package server;
+import java.io.File;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -7,10 +8,11 @@ public class Server {
     public static void main(String[] args) {
 
         ServerSocket listeningSocket = null;
-
+        int port = Integer.parseInt(args[0]);
+        File file = new File(args[1]);
         try {
             //Create a server socket listening on port 4444
-            listeningSocket = new ServerSocket(4444);
+            listeningSocket = new ServerSocket(port);
             int i = 0; //counter to keep track of the number of clients
 
 
@@ -25,7 +27,7 @@ public class Server {
                 //System.out.println("Remote Port: " + clientSocket.getPort());
                 System.out.println("Remote Hostname: " + clientSocket.getInetAddress().getHostName());
                 System.out.println("Local Port: " + clientSocket.getLocalPort());
-                ClientHandler clientHandler = new ClientHandler(clientSocket, i);
+                ClientHandler clientHandler = new ClientHandler(clientSocket, i, file);
                 new Thread(clientHandler).start();
 
             }
