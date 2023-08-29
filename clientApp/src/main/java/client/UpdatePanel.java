@@ -140,6 +140,7 @@ public class UpdatePanel extends JPanel {
                 // Pass the userInput to your client class for processing
                 textArea.setText("");
                 textArea.setVisible(true);
+                textArea.setEditable(false);
                 textArea.setBackground(Color.decode("#C09F80"));
                 Font customFont = new Font("Comic Sans MS", Font.BOLD, 28); // Font name, style, size
                 textArea.setFont(customFont);
@@ -153,6 +154,7 @@ public class UpdatePanel extends JPanel {
         constraints.gridy = 4; // Row 0
         constraints.fill = GridBagConstraints.HORIZONTAL;
         this.textArea.setVisible(false);
+        this.textArea.setEditable(false);
         this.textArea.setPreferredSize(new Dimension( 500, 50));
         this.textArea.setLineWrap(true);
         this.textArea.setWrapStyleWord(true);

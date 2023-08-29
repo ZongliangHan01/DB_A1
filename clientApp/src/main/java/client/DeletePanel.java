@@ -62,6 +62,7 @@ public class DeletePanel extends JPanel {
                 Font customFont = new Font("Comic Sans MS", Font.BOLD, 28); // Font name, style, size
                 textArea.setFont(customFont);
                 textArea.setVisible(true);
+                textArea.setEditable(false);
                 textArea.setBackground(Color.decode("#C09F80"));
                 textArea.append(response);
             }
@@ -74,6 +75,7 @@ public class DeletePanel extends JPanel {
         this.textArea.setPreferredSize(new Dimension(500, 100));
         add(textArea, constraints);
         this.textArea.setVisible(false);
+        this.textArea.setEditable(false);
         this.textArea.setLineWrap(true);
         this.textArea.setWrapStyleWord(true);
 

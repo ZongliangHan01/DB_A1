@@ -13,7 +13,7 @@ public class DictionaryOperationsImpl implements DictionaryOperations{
         this.jsonFile = file;
     }
     @Override
-    public String deleteWord(String targetWord) {
+    public synchronized String deleteWord(String targetWord) {
 //        File jsonFile = new File("/Users/zonglianghan/Desktop/DS/DS_A1/serverApp/src/main/java/server/dictionary.json");
         Word[] words = loadDatabase(jsonFile);
         String responseText = "Some error may occur";
@@ -40,7 +40,7 @@ public class DictionaryOperationsImpl implements DictionaryOperations{
     }
 
     @Override
-    public String updateWord(String targetWord, String[] newMeanings) {
+    public synchronized String updateWord(String targetWord, String[] newMeanings) {
 //        File jsonFile = new File("/Users/zonglianghan/Desktop/DS/DS_A1/serverApp/src/main/java/server/dictionary.json");
         Word[] words = loadDatabase(jsonFile);
         String responseText = "Some error may occur";
@@ -65,7 +65,7 @@ public class DictionaryOperationsImpl implements DictionaryOperations{
     }
 
     @Override
-    public String addWord(String newWord, String[] meanings) {
+    public synchronized String addWord(String newWord, String[] meanings) {
         boolean exist = false;
         String responseText = "Some error may occur";
 //        File jsonFile = new File("/Users/zonglianghan/Desktop/DS/DS_A1/serverApp/src/main/java/server/dictionary.json");
@@ -91,7 +91,8 @@ public class DictionaryOperationsImpl implements DictionaryOperations{
     }
 
     @Override
-    public String readWord(String targetWord) {
+    public synchronized
+    String readWord(String targetWord) {
 //        File jsonFile = new File("/Users/zonglianghan/Desktop/DS/DS_A1/serverApp/src/main/java/server/dictionary.json");
         Word[] words = loadDatabase(jsonFile);
         boolean exist = false;

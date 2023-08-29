@@ -21,11 +21,14 @@ public class Client {
             this.socket = socket;
 //            ConnectionMonitor monitor = new ConnectionMonitor(socket);
 //            monitor.start();
+//            System.out.println("Connection established");
 
         } catch (UnknownHostException ex) {
-            throw new RuntimeException(ex);
+//            throw new RuntimeException(ex);
+            System.out.println("Error: Unknown Host");
         } catch (IOException ex) {
-            throw new RuntimeException(ex);
+//            throw new RuntimeException(ex);
+            System.out.println("Error: Cannot connect to the server");
         }
 
     }

@@ -8,12 +8,21 @@ public class Server {
     public static void main(String[] args) {
 
         ServerSocket listeningSocket = null;
-        int port = Integer.parseInt(args[0]);
-        File file = new File(args[1]);
+//        int port = Integer.parseInt(args[0]);
+//        File file = new File(args[1]);
+        ServerGUI serverGUI = new ServerGUI();
+        int port = -1;
+        File file = null;
+        while (port == -1 || file == null) {
+            port = Integer.parseInt(serverGUI.getPort());
+            file = new File(serverGUI.getFile());
+        }
+
         try {
             //Create a server socket listening on port 4444
             listeningSocket = new ServerSocket(port);
             int i = 0; //counter to keep track of the number of clients
+
 
 
             //Listen for incoming connections forever

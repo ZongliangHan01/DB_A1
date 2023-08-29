@@ -68,6 +68,7 @@ public class ReadPanel extends JPanel implements sendable{
                 // Pass the userInput to your client class for processing
                 textArea.setText("");
                 textArea.setVisible(true);
+                textArea.setEditable(false);
                 textArea.setBackground(Color.decode("#C09F80"));
                 Font customFont = new Font("Comic Sans MS", Font.BOLD, 28); // Font name, style, size
                 textArea.setFont(customFont);
@@ -84,6 +85,7 @@ public class ReadPanel extends JPanel implements sendable{
         textArea.setPreferredSize(new Dimension( 500, 100));
         add(textArea, constraints);
         textArea.setVisible(false);
+        textArea.setEditable(false);
         textArea.setLineWrap(true);
         textArea.setWrapStyleWord(true);
 

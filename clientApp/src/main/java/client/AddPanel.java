@@ -103,6 +103,7 @@ public class AddPanel extends JPanel {
         addBtn.setPreferredSize(new Dimension(90, 50));
         customFont = new Font("Comic Sans MS", Font.PLAIN, 18); // Font name, style, size
         addBtn.setFont(customFont);
+        addBtn.setBackground((Color.decode("#AB9353")));
         add(addBtn, constraints);
 
 
@@ -143,6 +144,7 @@ public class AddPanel extends JPanel {
 //                String response = Client.sendRequest(userInput);
                 textArea.setText("");
                 textArea.setVisible(true);
+                textArea.setEditable(false);
                 textArea.setBackground(Color.decode("#C09F80"));
                 Font customFont = new Font("Comic Sans MS", Font.BOLD, 28); // Font name, style, size
                 textArea.setFont(customFont);
@@ -156,6 +158,7 @@ public class AddPanel extends JPanel {
         constraints.gridy = 4; // Row 0
         constraints.fill = GridBagConstraints.HORIZONTAL;
         this.textArea.setVisible(false);
+        this.textArea.setEditable(false);
         this.textArea.setPreferredSize(new Dimension( 500, 50));
         this.textArea.setLineWrap(true);
         this.textArea.setWrapStyleWord(true);

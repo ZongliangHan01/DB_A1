@@ -5,14 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b62a5d11-a172-4769-a0d4-b8474dfd3fde" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/ConnectPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../serverApp/src/main/java/server/ServerGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/client/AddPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/AddPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/client/ButtonPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/ButtonPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/ClientGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/ClientGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/client/DeletePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/DeletePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/client/ReadPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/ReadPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/client/UpdatePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/UpdatePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/AddPanel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/AddPanel$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/AddPanel$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/AddPanel$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/AddPanel$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/AddPanel$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/AddPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/AddPanel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/client/ButtonPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/ButtonPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/ClientGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/ClientGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/DeletePanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/DeletePanel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/DeletePanel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/DeletePanel$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/DeletePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/DeletePanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/ReadPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/ReadPanel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/ReadPanel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/ReadPanel$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/ReadPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/ReadPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/UpdatePanel$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/UpdatePanel$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/UpdatePanel$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/UpdatePanel$4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/client/UpdatePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/UpdatePanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../serverApp/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../serverApp/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../serverApp/src/main/java/server/DictionaryOperationsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../serverApp/src/main/java/server/DictionaryOperationsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../serverApp/src/main/java/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../serverApp/src/main/java/server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../serverApp/src/main/java/server/dictionary.json" beforeDir="false" afterPath="$PROJECT_DIR$/../serverApp/src/main/java/server/dictionary.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../serverApp/target/classes/server/DictionaryOperationsImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../serverApp/target/classes/server/DictionaryOperationsImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../serverApp/target/classes/server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/../serverApp/target/classes/server/Server.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,22 +70,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "212",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "364",
-    "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "/Users/zonglianghan/Desktop/DS/DS_A1/clientApp",
-    "project.structure.last.edited": "Problems",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;212&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;364&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/zonglianghan/Desktop/DS/DS_A1/clientApp&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java" />

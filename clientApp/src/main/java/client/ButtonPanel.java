@@ -95,6 +95,8 @@ public class ButtonPanel extends JPanel {
             public void actionPerformed(ActionEvent e) {
                 ClientGUI clientGUI = new ClientGUI();
                 clientGUI.refresh();
+                MainPanel cardPanel = (MainPanel) getParent();
+                clearText(cardPanel.getCardPanel());
             }
         });
     }
