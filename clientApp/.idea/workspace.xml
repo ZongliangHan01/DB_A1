@@ -5,39 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b62a5d11-a172-4769-a0d4-b8474dfd3fde" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/client/ConnectPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../serverApp/src/main/java/server/ServerGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/AddPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/AddPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/ButtonPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/ButtonPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/client/ClientGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/ClientGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/DeletePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/DeletePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/ConnectPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/ConnectPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/client/ReadPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/ReadPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/client/UpdatePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/UpdatePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/client/AddPanel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/AddPanel$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/client/AddPanel$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/AddPanel$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/client/AddPanel$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/AddPanel$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/client/AddPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/AddPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/client/ButtonPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/ButtonPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/Client.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/client/ClientGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/ClientGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/client/DeletePanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/DeletePanel$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/client/DeletePanel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/DeletePanel$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/client/DeletePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/DeletePanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/client/ReadPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/ReadPanel$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/client/ReadPanel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/ReadPanel$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/client/ReadPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/ReadPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/client/UpdatePanel$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/UpdatePanel$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/client/UpdatePanel$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/UpdatePanel$4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/client/UpdatePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/UpdatePanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../serverApp/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../serverApp/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../serverApp/src/main/java/server/DictionaryOperationsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../serverApp/src/main/java/server/DictionaryOperationsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clientApp-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/clientApp-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../serverApp/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../serverApp/dependency-reduced-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../serverApp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../serverApp/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../serverApp/src/main/java/server/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../serverApp/src/main/java/server/ClientHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../serverApp/src/main/java/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../serverApp/src/main/java/server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../serverApp/src/main/java/server/ServerGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../serverApp/src/main/java/server/ServerGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../serverApp/src/main/java/server/dictionary.json" beforeDir="false" afterPath="$PROJECT_DIR$/../serverApp/src/main/java/server/dictionary.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../serverApp/target/classes/server/DictionaryOperationsImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../serverApp/target/classes/server/DictionaryOperationsImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../serverApp/target/classes/server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/../serverApp/target/classes/server/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../serverApp/target/original-serverApp-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../serverApp/target/original-serverApp-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../serverApp/target/serverApp-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../serverApp/target/serverApp-1.0.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,5 +151,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/clientApp$ClientGUI.ic" NAME="ClientGUI Coverage Results" MODIFIED="1693330305269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>client.*</FILTER>
+    </SUITE>
   </component>
 </project>

@@ -26,8 +26,8 @@ public class ClientGUI {
 
     public static void main(String[] args) {
 //        ClientGUI clientGUI = new ClientGUI();
-        String host = args[0];
-        int port = Integer.parseInt(args[1]);
+//        String host = args[0];
+//        int port = Integer.parseInt(args[1]);
         ClientGUI clientGUI = new ClientGUI();
         SwingUtilities.invokeLater(() -> {
             createAndShowGUI();

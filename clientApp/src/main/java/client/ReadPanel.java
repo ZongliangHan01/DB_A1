@@ -12,7 +12,7 @@ public class ReadPanel extends JPanel implements sendable{
     JTextField searchField;
     public ReadPanel() {
 
-        setPreferredSize(new Dimension(200, 150));
+        setPreferredSize(new Dimension(500, 500));
         setBackground(Color.decode("#C09F80"));
         setLayout(new GridBagLayout());
         GridBagConstraints constraints = new GridBagConstraints();
@@ -82,7 +82,7 @@ public class ReadPanel extends JPanel implements sendable{
         constraints.gridy = 6; // Row 0
 
         constraints.fill = GridBagConstraints.HORIZONTAL;
-        textArea.setPreferredSize(new Dimension( 500, 100));
+        textArea.setPreferredSize(new Dimension( 500, 200));
         add(textArea, constraints);
         textArea.setVisible(false);
         textArea.setEditable(false);

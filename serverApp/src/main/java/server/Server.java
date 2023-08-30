@@ -4,19 +4,35 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.SocketException;
-public class Server {
-    public static void main(String[] args) {
+import java.util.ArrayList;
+import java.util.List;
 
-        ServerSocket listeningSocket = null;
+public class Server {
+    private int port;
+    private File file;
+    private boolean running = true;
+
+    ServerSocket listeningSocket = null;
+    private List<ClientHandler> clientHandlers = new ArrayList<>();
+//    public static void main(String[] args) {
+    public Server(int port, File file) {
+        this.port = port;
+        this.file = file;
+    }
+
+    public Server() {
+    }
+    public void startServer() {
+//        ServerSocket listeningSocket = null;
 //        int port = Integer.parseInt(args[0]);
 //        File file = new File(args[1]);
-        ServerGUI serverGUI = new ServerGUI();
-        int port = -1;
-        File file = null;
-        while (port == -1 || file == null) {
-            port = Integer.parseInt(serverGUI.getPort());
-            file = new File(serverGUI.getFile());
-        }
+//        ServerGUI serverGUI = new ServerGUI();
+//        int port = -1;
+//        File file = null;
+//        while (port == -1 || file == null) {
+//            port = Integer.parseInt(serverGUI.getPort());
+//            file = new File(serverGUI.getFile());
+//        }
 
         try {
             //Create a server socket listening on port 4444
@@ -26,7 +42,7 @@ public class Server {
 
 
             //Listen for incoming connections forever
-            while (true)
+            while (running)
             {
                 System.out.println("server.Server listening on port 4444 for a connection");
                 //Accept an incoming client connection request
@@ -37,6 +53,7 @@ public class Server {
                 System.out.println("Remote Hostname: " + clientSocket.getInetAddress().getHostName());
                 System.out.println("Local Port: " + clientSocket.getLocalPort());
                 ClientHandler clientHandler = new ClientHandler(clientSocket, i, file);
+                clientHandlers.add(clientHandler);
                 new Thread(clientHandler).start();
 
             }
@@ -64,6 +81,35 @@ public class Server {
                     e.printStackTrace();
                 }
             }
+        }
+    }
+
+    public void setRunning(boolean flag) {
+        running = flag;
+    }
+
+    public boolean getRunning() {
+        return running;
+    }
+
+    public void setPort(int port) {
+        this.port = port;
+    }
+
+    public void setFile(File file) {
+        this.file = file;
+    }
+
+    public void stopServer() {
+        running = false;
+        try {
+            // Close the server socket to stop accepting new connections
+            for (ClientHandler ch : clientHandlers) {
+                ch.close();
+            }
+            listeningSocket.close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }

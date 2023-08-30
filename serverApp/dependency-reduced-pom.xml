@@ -18,7 +18,7 @@
             <configuration>
               <transformers>
                 <transformer>
-                  <mainClass>server.Server</mainClass>
+                  <mainClass>server.ServerGUI</mainClass>
                 </transformer>
               </transformers>
             </configuration>

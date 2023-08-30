@@ -14,7 +14,7 @@ public class ConnectPanel extends JPanel {
 
     public ConnectPanel() {
 
-        setPreferredSize(new Dimension(200, 150));
+        setPreferredSize(new Dimension(400, 400));
         setBackground(Color.decode("#C09F80"));
         setLayout(new GridBagLayout());
         GridBagConstraints constraints = new GridBagConstraints();
@@ -31,11 +31,11 @@ public class ConnectPanel extends JPanel {
         add(label, constraints);
 
 
-        JLabel ipLabel = new JLabel("Server IP: ");
+        JLabel ipLabel = new JLabel("IP: ");
         constraints.gridx = 0; // Column 0
         constraints.gridy = 1; // Row 0
         constraints.fill = GridBagConstraints.HORIZONTAL;
-        ipLabel.setPreferredSize(new Dimension(100, 50));
+        ipLabel.setPreferredSize(new Dimension(80, 50));
         ipLabel.setHorizontalAlignment(SwingConstants.CENTER);
         customFont = new Font("Comic Sans MS", Font.BOLD + Font.ITALIC, 18); // Font name, style, size
         ipLabel.setFont(customFont);
@@ -45,15 +45,16 @@ public class ConnectPanel extends JPanel {
         constraints.gridx = 1; // Column 0
         constraints.gridy = 1; // Row 0
         constraints.fill = GridBagConstraints.HORIZONTAL;
-        ipField.setPreferredSize(new Dimension(100, 50));
+        ipField.setPreferredSize(new Dimension(80, 50));
+        ipField.setText("localhost");
         add(ipField, constraints);
 
 
-        JLabel portLabel = new JLabel("Server Port: ");
+        JLabel portLabel = new JLabel("Port: ");
         constraints.gridx = 0; // Column 0
         constraints.gridy = 2; // Row 0
         constraints.fill = GridBagConstraints.HORIZONTAL;
-        portLabel.setPreferredSize(new Dimension(100, 50));
+        portLabel.setPreferredSize(new Dimension(80, 50));
         portLabel.setHorizontalAlignment(SwingConstants.CENTER);
         customFont = new Font("Comic Sans MS", Font.BOLD + Font.ITALIC, 18); // Font name, style, size
         portLabel.setFont(customFont);
@@ -63,7 +64,8 @@ public class ConnectPanel extends JPanel {
         constraints.gridx = 1; // Column 0
         constraints.gridy = 2; // Row 0
         constraints.fill = GridBagConstraints.HORIZONTAL;
-        portField.setPreferredSize(new Dimension(100, 50));
+        portField.setPreferredSize(new Dimension(80, 50));
+        portField.setText("4444");
         add(portField, constraints);
 
         // Create a JButton for each button

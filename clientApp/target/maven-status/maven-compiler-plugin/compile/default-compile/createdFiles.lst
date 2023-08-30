@@ -11,11 +11,13 @@ client/ReadPanel.class
 client/AddPanel$4.class
 client/ReadPanel$2.class
 client/UpdatePanel$1.class
+client/ConnectPanel.class
 client/ButtonPanel$3.class
 client/ButtonPanel$5.class
 client/AddPanel$2.class
 client/UpdatePanel$3.class
 client/UpdatePanel$4.class
+client/ConnectPanel$1.class
 client/Client.class
 client/DeletePanel$2.class
 client/ClientGUI.class

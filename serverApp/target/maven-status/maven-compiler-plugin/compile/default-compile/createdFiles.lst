@@ -1,6 +1,10 @@
 server/Word.class
 server/DictionaryOperations.class
+server/ServerGUI$1.class
 server/ClientHandler.class
 server/Server.class
+server/ServerGUI$1$1.class
 server/DictionaryOperationsImpl.class
 server/Controller.class
+server/ServerGUI$2.class
+server/ServerGUI.class
