@@ -93,8 +93,8 @@ public class ButtonPanel extends JPanel {
         refreshBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                ClientGUI clientGUI = new ClientGUI();
-                clientGUI.refresh();
+//                ClientGUI clientGUI = new ClientGUI();
+                ClientGUI.refresh();
                 MainPanel cardPanel = (MainPanel) getParent();
                 clearText(cardPanel.getCardPanel());
             }

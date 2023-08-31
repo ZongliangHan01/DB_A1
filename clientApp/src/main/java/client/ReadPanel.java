@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class ReadPanel extends JPanel implements sendable{
+public class ReadPanel extends JPanel {
 //    private JLabel label;
     private String readMsg;
     private JTextArea textArea;
@@ -155,8 +155,4 @@ public class ReadPanel extends JPanel implements sendable{
         return this.readMsg;
     }
 
-    @Override
-    public String sendMsg() {
-        return this.readMsg;
-    }
 }

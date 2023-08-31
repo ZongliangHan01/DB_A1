@@ -159,7 +159,7 @@ public class AddPanel extends JPanel {
         constraints.fill = GridBagConstraints.HORIZONTAL;
         this.textArea.setVisible(false);
         this.textArea.setEditable(false);
-        this.textArea.setPreferredSize(new Dimension( 500, 50));
+        this.textArea.setPreferredSize(new Dimension( 500, 200));
         this.textArea.setLineWrap(true);
         this.textArea.setWrapStyleWord(true);
         add(textArea, constraints);

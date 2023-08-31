@@ -74,8 +74,8 @@ public class DictionaryOperationsImpl implements DictionaryOperations{
         Word wordToAdd = new Word(newWord, meanings);
         for (Word word : words) {
             if (word.getWord().equals(newWord)) {
-                System.out.println("this world already exist in the dictionary, please use update method");
-                responseText = "Error: This world already exist in the dictionary, please use update method";
+                System.out.println("this word already exist in the dictionary, please use update method");
+                responseText = "Error: This word already exist in the dictionary, please use update method";
                 exist = true;
                 break;
             }

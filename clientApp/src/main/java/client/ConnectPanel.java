@@ -94,7 +94,7 @@ public class ConnectPanel extends JPanel {
         constraints.fill = GridBagConstraints.HORIZONTAL;
         this.messageArea.setVisible(false);
         this.messageArea.setEditable(false);
-        this.messageArea.setPreferredSize(new Dimension( 500, 50));
+        this.messageArea.setPreferredSize(new Dimension( 500, 100));
         this.messageArea.setLineWrap(true);
         this.messageArea.setWrapStyleWord(true);
         add(messageArea, constraints);
