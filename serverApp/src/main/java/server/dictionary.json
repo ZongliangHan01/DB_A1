@@ -1,70 +1,94 @@
-[ {
-  "word" : "goodbye",
-  "meaning" : [ "v. farewell" ]
-}, {
-  "word" : "cat",
-  "meaning" : [ "n. a domestic animal" ]
-}, {
-  "word" : "computer",
-  "meaning" : [ "n. an electronic device" ]
-}, {
-  "word" : "book",
-  "meaning" : [ "n. a written or printed work" ]
-}, {
-  "word" : "run",
-  "meaning" : [ "v. to move quickly on foot" ]
-}, {
-  "word" : "tree",
-  "meaning" : [ "n. a woody plant" ]
-}, {
-  "word" : "eat",
-  "meaning" : [ "v. to consume food" ]
-}, {
-  "word" : "car",
-  "meaning" : [ "n. a motor vehicle" ]
-}, {
-  "word" : "watch",
-  "meaning" : [ "v. to observe", "n. a timekeeping device" ]
-}, {
-  "word" : "house",
-  "meaning" : [ "n. a building where people live", "n. a legislative body" ]
-}, {
-  "word" : "play",
-  "meaning" : [ "v. to engage in an activity for enjoyment", "n. a dramatic performance" ]
-}, {
-  "word" : "paint",
-  "meaning" : [ "v. to apply color to a surface", "n. a colored substance" ]
-}, {
-  "word" : "fly",
-  "meaning" : [ "v. to move through the air with wings", "n. a flying insect" ]
-}, {
-  "word" : "bank",
-  "meaning" : [ "n. a financial institution", "n. the side of a river" ]
-}, {
-  "word" : "light",
-  "meaning" : [ "n. visible radiant energy", "adj. not heavy" ]
-}, {
-  "word" : "watch",
-  "meaning" : [ "v. to observe", "n. a timekeeping device", "n. a period of time spent observing" ]
-}, {
-  "word" : "break",
-  "meaning" : [ "v. to separate into pieces", "n. a pause or interruption" ]
-}, {
-  "word" : "run",
-  "meaning" : [ "v. to move quickly on foot", "n. a continuous period of operation" ]
-}, {
-  "word" : "close",
-  "meaning" : [ "v. to shut", "adj. near in space or time" ]
-}, {
-  "word" : "remote",
-  "meaning" : [ "adj. distant in space", "adj. unlikely or unreachable" ]
-}, {
-  "word" : "see",
-  "meaning" : [ "v. to look" ]
-}, {
-  "word" : "phone",
-  "meaning" : [ "lalalallallaa", "hihihih", "lelelele", "lilili" ]
-}, {
-  "word" : "hello",
-  "meaning" : [ "hihi" ]
-} ]
+[
+  {
+    "word": "goodbye",
+    "meaning": ["v. farewell"]
+  },
+  {
+    "word": "cat",
+    "meaning": ["n. a domestic animal"]
+  },
+  {
+    "word": "computer",
+    "meaning": ["n. an electronic device"]
+  },
+  {
+    "word": "book",
+    "meaning": ["n. a written or printed work"]
+  },
+  {
+    "word": "run",
+    "meaning": ["v. to move quickly on foot"]
+  },
+  {
+    "word": "tree",
+    "meaning": ["n. a woody plant"]
+  },
+  {
+    "word": "eat",
+    "meaning": ["v. to consume food"]
+  },
+  {
+    "word": "car",
+    "meaning": ["n. a motor vehicle"]
+  },
+  {
+    "word": "watch",
+    "meaning": ["v. to observe", "n. a timekeeping device"]
+  },
+  {
+    "word": "house",
+    "meaning": ["n. a building where people live"]
+  },
+  {
+    "word": "play",
+    "meaning": ["v. to engage in an activity for enjoyment", "n. a dramatic performance"]
+  },
+  {
+    "word": "paint",
+    "meaning": ["v. to apply color to a surface", "n. a colored substance"]
+  },
+  {
+    "word": "fly",
+    "meaning": ["v. to move through the air with wings", "n. a flying insect"]
+  },
+  {
+    "word": "bank",
+    "meaning": ["n. a financial institution", "n. the side of a river"]
+  },
+  {
+    "word": "light",
+    "meaning": ["n. visible radiant energy", "adj. not heavy"]
+  },
+  {
+    "word": "break",
+    "meaning": ["v. to separate into pieces", "n. a pause or interruption"]
+  },
+  {
+    "word": "close",
+    "meaning": ["v. to shut", "adj. near in space or time"]
+  },
+  {
+    "word": "remote",
+    "meaning": ["adj. distant in space", "adj. unlikely or unreachable"]
+  },
+  {
+    "word": "see",
+    "meaning": ["v. to look"]
+  },
+  {
+    "word": "phone",
+    "meaning": ["n. a telecommunications device", "n. a call or conversation on a phone"]
+  },
+  {
+    "word": "hello",
+    "meaning": ["interj. a greeting"]
+  },
+  {
+    "word": "jacket",
+    "meaning": ["n. a type of outerwear", "n. an envelope for a CD or DVD"]
+  },
+  {
+    "word": "lead",
+    "meaning": ["v. to guide", "n. a heavy metal"]
+  }
+]

@@ -1,7 +1,6 @@
 client/ButtonPanel$4.class
 client/DeletePanel$1.class
 client/MainPanel.class
-client/sendable.class
 client/ButtonPanel.class
 client/AddPanel$1.class
 client/ButtonPanel$1.class
@@ -26,4 +25,3 @@ client/ReadPanel$1.class
 client/AddPanel$3.class
 client/DeletePanel.class
 client/AddPanel.class
-client/ConnectionMonitor.class

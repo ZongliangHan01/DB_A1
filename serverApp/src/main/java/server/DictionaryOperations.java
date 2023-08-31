@@ -1,3 +1,8 @@
+/*
+Zongliang Han
+1166050
+ */
+
 package server;
 
 public interface DictionaryOperations {
